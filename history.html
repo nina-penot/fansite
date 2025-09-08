@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+
+<html>
+
+<!-- Votre "head" ici -->
+
+<head>
+    <meta content="text/html" charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/fansite.css">
+    <title>WALUIGI'S WAHBSITE</title>
+</head>
+
+<!-- BODY -->
+
+<body>
+    <!-- ----------------------------------------------------------------------------------------- -->
+    <!-- HEADER -->
+    <header>
+
+        <!-- Gros titre du site -->
+        <a class="titre_site" href="index.html">
+            <img class="titre_site_img" src="assets/images/Title_tag.png" alt="Titre">
+            <div class="titre_site_text">'s WAHBSITE!!!</div>
+            <img class="titre_nose" src="assets/images/nose.png" alt="nose">
+        </a>
+        <div class="clear_float"></div>
+
+        <!-- Menu navigation -->
+        <nav class="navigation">
+            <a class="nav_text" href="index.html">Home</a>
+            <a class="nav_text" href="history.html">Waluigi's history</a>
+            <a class="nav_text" href="stats.html">Stats</a>
+            <a class="nav_text" href="game_apparitions.html">Game apparitions</a>
+            <a class="nav_text" href="news.html">News</a>
+            <a class="nav_text" href="contact.html">Contact</a>
+        </nav>
+
+        <!-- Audio play -->
+        <div class="clear_float"></div>
+        <audio style="width: 100%;" id="audioplayer" controls loop autoplay>
+            <source src="assets/audio/DS Waluigi Pinball (Mario Kart DS) - Mario Kart World (OST).mp3">
+        </audio>
+        <!-- you must include JS after the player; otherwise you will get undifiend object-->
+        <script src="audio.js"></script>
+
+    </header>
+    <!-- ---------------------------------------------------------------------------------------- -->
+
+    <!-- PAGE -->
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+    <script src="top_button.js"></script>
+
+    <div class="history_center">
+        <div class="history_main">
+            <div class="history_media">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/X-_P9onXHfA?si=Vr6MdlKKBU67m7fo"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+            <div class="history_text">
+                <div class="history_title">WALUIGI'S DEBUT: MARIO TENNIS</div>
+                <div class="history_text_content">AAAAAAAAA</div>
+            </div>
+        </div>
+        <div class="history_main">
+            <div class="history_text">
+                <div class="history_title">MARIO PARTY 3: FIRST PARTY!</div>
+                <div class="history_text_content"></div>
+            </div>
+            <div class="history_media">
+                <iframe width="560" height="315"
+                    src="https://www.youtube.com/embed/eoRFkGrQdA0?si=VPcRjKaOBJjT7r6b&amp;start=11"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+        </div>
+        <div class="history_main">
+            <div class="history_media">
+                <img src="assets/images/waluigi/melee_trophy.jpg" alt="melee trophy">
+            </div>
+            <div class="history_text">
+                <div class="history_title">FIRST APPEARANCE IN SMASH BROS: WALUIGI TROPHY</div>
+                <div class="history_text_content"></div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- FIN PAGE -->
+
+    <!-- FOOTER -->
+    <footer style="position: relative;">
+        <!-- Menu en 3 colonnes -->
+        <img class="rose_size" src="assets/images/rose.svg" alt="rose">
+        <div class="footer_grid">
+            <!-- Pages du site -->
+            <div class="footer_col">
+                <div class="footer_text_titre"><b>VISIT WEBSITE</b></div>
+                <a class="footer_text" href="index.html">Home</a>
+                <a class="footer_text" href="history.html">Waluigi's history</a>
+                <a class="footer_text" href="stats.html">Stats</a>
+                <a class="footer_text" href="game_apparitions.html">Game apparitions</a>
+                <a class="footer_text" href="news.html">News</a>
+                <a class="footer_text" href="contact.html">Contact</a>
+            </div>
+            <!-- Liens Ressources -->
+            <div class="footer_col">
+                <div class="footer_text_titre"><b>RESOURCES</b></div>
+                <a class="footer_text" href="https://en.wikipedia.org/wiki/Waluigi" target="_blank">Waluigi:
+                    wikipedia</a>
+                <a class="footer_text" href="https://www.mariowiki.com/Waluigi" target="_blank">Waluigi: Mario Wiki</a>
+                <a class="footer_text" href="https://play.nintendo.com/themes/friends/waluigi/" target="_blank">Nintendo
+                    Waluigi's Profile</a>
+                <a class="footer_text"
+                    href="https://www.nintendo.com/au/news-and-articles/welcome-to-the-wah-nderful-world-of-waluigi/"
+                    target="_blank">Nintendo
+                    Waluigi post</a>
+            </div>
+            <!-- Bouton contact -->
+            <div style="display: flex; flex-flow: column;">
+                <a class="footer_contact" href="contact.html">
+                    <div class="footer_contact_text_pos">
+                        <div class="footer_contact_text">CONTACT</div>
+                    </div>
+                </a>
+                <div style="align-self: center;">
+                    <img class="mail" src="assets/images/mail.svg" alt="mail">
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+<!-- Si vous souhaitez utiliser des scripts enlevez les flèches de commentaire ci-dessous -->
+<!-- <script></script> -->
+
+</html>

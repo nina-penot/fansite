@@ -1,0 +1,643 @@
+/* Styles de structure */
+
+@font-face {
+    font-family: Mario;
+    src: url("../fonts/MarioAndLuigi.ttf");
+}
+
+html {
+    cursor: url("../images/WaluigiCursor_grab.png") 5 5, auto;
+}
+
+body {
+    margin: 0px;
+    background-color: #5b349a;
+    font-family: Mario;
+}
+
+a {
+    cursor: url("../images/WaluigiCursor.png")5 5, pointer;
+    text-decoration: none;
+}
+
+/* ---------------------------------------------------------------------------- */
+
+/* HEADER */
+
+/* titre (might be image) */
+.titre_site {
+    background-image: url("../images/wall.png");
+    background-size: 50%;
+    width: 100%;
+    height: 20vw;
+    display: flex;
+    float: left;
+}
+
+.titre_site_img {
+    margin: 1.5vw;
+    height: 16vw;
+    width: 38vw;
+}
+
+.titre_site_text {
+    color: yellow;
+    font-size: 6vw;
+    margin-top: 11vw;
+}
+
+.titre_nose {
+    height: 10vw;
+    margin-top: 2vw;
+}
+
+/* ---------------------------------------------------------------------------------------- */
+
+/* NAVIGATION TOP */
+
+/* navigation construct */
+.navigation {
+    display: flex;
+    float: left;
+    width: 100%;
+    background-color: #1c2850;
+    /* padding: 15px 0; */
+}
+
+.clear_float {
+    display: block;
+    clear: both;
+}
+
+/* navigation text */
+.navigation .nav_text {
+    color: white;
+    font-size: large;
+    padding-left: 1vw;
+    padding-right: 20px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    transition: transform 1s ease 0s;
+}
+
+.nav_text:hover {
+    background-color: yellow;
+    color: #5b349a;
+    transform: scale(1.1) rotate(2deg);
+}
+
+/* ------------------------------------------------------------------------- */
+
+/* Carte "post" pour accueil */
+
+/* Carte grid */
+.Card_grid {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin: 10px 0;
+}
+
+/* Carte */
+.Card_white {
+    /* display: flex; */
+    background-image: url("../images/wall_poster.svg");
+    background-size: contain;
+    height: 44.5vw;
+    width: 39.1vw;
+    margin: 4vw;
+}
+
+.Card_title_pos {
+    display: flex;
+    justify-content: center;
+}
+
+.Card_title_block {
+    background-color: yellow;
+    border: #5b349a solid 0.5vw;
+    margin-top: 8vw;
+    margin-bottom: 2vw;
+    width: 70%;
+    font-size: 2.5vw;
+    padding: 0.5vw;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+}
+
+.Card_text {
+    margin-left: 6vw;
+    margin-right: 6vw;
+    font-size: 1.5vw;
+    line-height: 1.5;
+}
+
+.Card_text_link {
+    text-decoration: none;
+    background-color: yellow;
+    color: inherit;
+}
+
+/* --------------------------------------------------------------------------------- */
+
+/* Waluigi speaks */
+.Speak_block {
+    width: 27vw;
+    height: 12vw;
+    padding: 1vw;
+    display: flex;
+    float: left;
+    margin-top: 9vw;
+    margin-left: 5vw;
+}
+
+.speak_gif {
+    width: 10vw;
+    object-fit: contain;
+    align-self: flex-end;
+}
+
+.speech-bubble_block {
+    margin-left: 3vw;
+}
+
+.Says {
+    background-color: yellow;
+    margin-bottom: 1vw;
+    font-size: 2vw;
+    padding: 1vw;
+}
+
+.speech-bubble {
+    position: relative;
+    background: white;
+    border-radius: .4vw;
+    width: 12vw;
+    height: 4vw;
+    padding: 1.5vw;
+    display: flex;
+}
+
+.speech-bubble:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 0;
+    height: 0;
+    border: 2vw solid transparent;
+    border-right-color: white;
+    border-left: 0;
+    border-bottom: 0;
+    margin-top: -2vw;
+    margin-left: -1.8vw;
+}
+
+.speech-bubble_text {
+    font-size: 4vw;
+    align-self: center;
+}
+
+/* ------------------------------------------------------------------------- */
+
+/* Image showing height */
+.Height_container {
+    position: relative;
+    max-width: 100%;
+    height: 400px;
+    rotate: 2deg;
+}
+
+.Height_image {
+    max-width: 90%;
+    margin: 10px;
+}
+
+.Height_man {
+    position: absolute;
+    left: 260px;
+    top: 140px;
+}
+
+/* -------------------------------------------------------------------------- */
+
+/* PROFILE CARD */
+
+/* White card (rounded) */
+
+.Profile_card_container {
+    display: grid;
+    grid-template-columns: 70% 30%;
+    margin: 40px;
+}
+
+.Profile_card {
+    width: 800px;
+    height: 500px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 6px 6px 8px 1px rgba(0, 0, 0, 0.29);
+    margin: 20px 0;
+    border: #1c2850 solid 2px;
+    rotate: -5deg;
+}
+
+.Profile_image {
+    float: left;
+    height: 230px;
+    margin: 20px 10px 20px 20px;
+}
+
+.Profile_bubble {
+    position: relative;
+    background: yellow;
+    color: #000000;
+    font-size: 40px;
+    filter: drop-shadow(5px 5px 2px rgba(0, 0, 0, 0.21));
+    width: 335px;
+    height: 79px;
+    border-radius: 10px;
+    padding: 0px;
+    display: flex;
+    rotate: -5deg;
+    transform: translate(30px);
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.Profile_bubble:after {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 0;
+    z-index: 1;
+    border-style: solid;
+    border-width: 0 0 21px 48px;
+    border-color: transparent transparent yellow transparent;
+    top: 65%;
+    left: -48px;
+    margin-top: -10.5px;
+}
+
+.Profile_text {
+    font-size: x-large;
+}
+
+.Profile_columns {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin: 10px 0;
+}
+
+.Profile_hair {
+    background-color: #934226;
+    height: 30px;
+    width: 30px;
+    border-radius: 100%;
+    border: #000000 solid 5px;
+}
+
+.Profile_eye {
+    display: flex;
+    background-color: #ffffff;
+    height: 40px;
+    width: 40px;
+    border-radius: 100%;
+    border: #80d6f7 solid 2px;
+    outline: #000000 solid 1px;
+    justify-content: center;
+    align-items: center;
+}
+
+.Profile_eye_iris {
+    display: flex;
+    background: #919AB6;
+    background: linear-gradient(0deg, rgba(145, 154, 182, 1) 0%, rgba(182, 192, 221, 1) 100%);
+    border: #000000 solid 1px;
+    height: 70%;
+    width: 70%;
+    border-radius: 100%;
+    justify-content: center;
+    align-content: center;
+}
+
+.Profile_eye_pupil {
+    background-color: #000000;
+    height: 50%;
+    width: 50%;
+    border-radius: 100%;
+    align-self: center;
+}
+
+.Profile_low_container {
+    width: 100%;
+    height: 44%;
+    display: flex;
+    justify-content: center;
+    align-self: flex-end;
+}
+
+.Profile_low {
+    background-color: #5b349a;
+    border: #1c2850 solid 5px;
+    border-radius: 20px;
+    margin: 10px;
+    width: 95%;
+    display: flex;
+    flex-flow: column;
+}
+
+.Profile_low_title {
+    background-color: yellow;
+    width: 50%;
+    height: 60px;
+    margin: 0 auto 0 auto;
+    transform: translateY(-20px);
+    border-radius: 20px;
+    border: #1c2850 solid 5px;
+    text-align: center;
+    align-content: center;
+    font-size: x-large;
+}
+
+.Profile_low_body {
+    display: flex;
+    gap: 10px;
+    height: 70%;
+    width: 100%;
+    transform: translateY(-10px);
+}
+
+.Profile_low_body_text {
+    color: white;
+}
+
+/* ------------------------------------------------------------------------- */
+
+/* NEWS CARDS */
+
+.news_card_container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.news_card {
+    background-color: white;
+    border-radius: 20px;
+    width: 500px;
+    height: 700px;
+    margin: 30px;
+    box-shadow: 0px 0px 16px 6px rgba(0, 0, 0, 0.28);
+    transition: transform 1s ease 0s;
+}
+
+.news_card:hover {
+    transform: scale(1.05);
+}
+
+.news_frames {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: yellow;
+    color: #5b349a;
+    cursor: url("../images/WaluigiCursor.png") 5 5, pointer;
+    padding: 15px;
+    border-radius: 4px;
+    font-family: Mario;
+    transition: transform 1s ease 0s;
+}
+
+#myBtn:hover {
+    transform: scale(1.05);
+    background-color: white;
+}
+
+/* --------------------------------------------------------------------------- */
+
+/* History */
+.history_center {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+}
+
+.history_main {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    height: 450px;
+    width: 95%;
+    margin: 20px 0 20px 0;
+}
+
+.history_text {
+    margin: 20px;
+    background-color: yellow;
+    box-shadow: 6px 6px 8px 1px rgba(0, 0, 0, 0.29);
+}
+
+.history_title {
+    font-size: xx-large;
+    align-self: center;
+    text-align: center;
+    padding: 20px;
+    background-color: rgb(218, 204, 0);
+}
+
+.history_text_content {
+    margin: 20px;
+    font-size: large;
+}
+
+.history_media {
+    /* background-color: white; */
+    display: flex;
+    margin: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+/* ---------------------------------------------------------------------------- */
+
+/* CONTACT FORM */
+
+.contact_container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+.contact_box {
+    background-color: white;
+    border-radius: 2vw;
+    width: 50vw;
+    height: 55vw;
+    margin: 2vw;
+}
+
+.contact_title {
+    background-color: yellow;
+    border: #5b349a solid 0.5vw;
+    color: #5b349a;
+    text-align: center;
+    font-size: 4vw;
+    margin: 2vw;
+    border-radius: 1vw;
+    padding: 1vw;
+}
+
+.contact_form {
+    background-color: yellow;
+    border: #5b349a solid 0.5vw;
+    color: #5b349a;
+    border-radius: 1vw;
+    padding: 2vw;
+    margin: 2vw;
+    height: 65%;
+}
+
+.contact_text {
+    font-size: 1.5vw;
+}
+
+.contact_select {
+    width: 90%;
+    height: 3vw;
+    font-size: 1vw;
+}
+
+.contact_textbox {
+    height: 10vw;
+    width: 90%;
+    max-width: 90%;
+    max-height: 15vw;
+    font-size: 1vw;
+}
+
+.contact_submit {
+    background-color: #5b349a;
+    color: yellow;
+    padding: 1vw;
+    border: none;
+    border-radius: 1vw;
+    font-family: Mario;
+    font-size: 2vw;
+    cursor: url("../images/WaluigiCursor.png") 5 5, pointer;
+    display: flex;
+    float: right;
+    margin: 4vw 3vw 0 0;
+    transition: transform 1s ease 0s;
+}
+
+.contact_submit:hover {
+    background-color: #1c2850;
+    transform: scale(1.1);
+}
+
+/* -------------------------------------------------------------------------- */
+
+/* FOOTER */
+
+.rose_size {
+    object-fit: contain;
+    height: 15vw;
+    margin-top: 30px;
+    position: absolute;
+    left: 68%;
+    top: -10vw;
+}
+
+/* Make columns */
+.footer_grid {
+    display: grid;
+    grid-template-columns: 35% 35% 30%;
+    background-color: #1c2850;
+    font-size: large;
+    color: white;
+}
+
+/* Change column */
+.footer_col {
+    margin: 20px;
+    display: flex;
+    flex-flow: column;
+}
+
+/* Change text */
+.footer_text_titre {
+    background-color: #5b349a;
+    color: yellow;
+    margin-bottom: 20px;
+    padding: 20px;
+    text-decoration: underline;
+    /* width: 200px; */
+}
+
+.footer_text {
+    margin-bottom: 10px;
+    padding: 10px;
+    width: 200px;
+    transition: transform 1s ease 0s;
+    color: inherit;
+}
+
+.footer_text:hover {
+    background-color: yellow;
+    color: #5b349a;
+    transform: scale(1.1) translate(10px, 0) rotate(2deg);
+}
+
+/* Boutton contact */
+.footer_contact {
+    background-color: yellow;
+    border: #5b349a solid 8px;
+    height: 80px;
+    width: 250px;
+    display: flex;
+    align-self: center;
+    margin-top: 35%;
+    margin-left: 50px;
+    transition: transform 1s ease 0s;
+}
+
+.footer_contact:hover {
+    background-color: white;
+    transform: scale(1.1) rotate(-2deg);
+}
+
+.footer_contact_text_pos {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+}
+
+.footer_contact_text {
+    color: #1c2850;
+    font-size: 45px;
+}
+
+.mail {
+    height: 80px;
+    margin-top: 10px;
+    margin-left: 60px;
+    align-self: center;
+}

@@ -1,0 +1,64 @@
+Fansite on Waluigi
+
+-------------------------
+
+Pages:
+- Index (page d'accueil)
+- Stats (taille, poids, color palette, powers,...)
+- Game apparitions list
+- History
+- News posts
+- Contact
+
+NUMBER OF PAGES: 6
+
+Index/Accueil:
+Welcome message
+Who is Waluigi
+Waluigi my beloved
+
+Stats:
+Contains a card format for the character with informations
+Height and Weight (estimated)
+Color palette
+powers
+
+Game apparitions:
+List of games by date
+
+History:
+History of Waluigi with one section per major event
+
+News Posts:
+Some posts about recent event
+looks like a press journal
+
+Contact:
+Contact form
+should mail to my email
+subjects: suggestion, news request, Waluigi appreciation message
+
+--------------------------
+
+HEADER:
+Big title (Waluigi Wahbsite)
+Nav bar or menu?
+
+FOOTER:
+Nav menu (vertical)
+Ressources
+Contact
+
+-----------------------
+
+Other:
+
+-Website should have an omnipresent audio track playing smooth jazz night version of Waluigi Pinball
+-Should have a very "neon city at night" aesthetic, with street tags
+-May have something to do with Pinball
+-Ideally the stat height should have a Waluigi behind a doorframe next to the silhouette of 175cm tall person.
+-Main page has video of Waluigi being cool (tennis aces power showcase)
+-Or maybe a background gif/video of Waluigi doing cool things
+-favicon should be Waluigi's L
+-Would be very cool (although hard) if the history page had a new nav menu, vertical, that sticks to the page
+and allows quick access to each section of the history (like a wiki menu that)

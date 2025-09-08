@@ -52,35 +52,38 @@
     <div class="contact_container">
         <div class="contact_box">
             <div class="contact_title">CONTACT</div>
+
             <div class="contact_form">
-                <form action="mailto:nina.penot@laplateforme.io" method="GET">
-                    <div>
-                        <label class="contact_text" for="name">Your name:</label>
-                        <input class="contact_select" type="text" id="name" name="name" placeholder="Your name.."
-                            required>
-                    </div>
-                    <div style="margin-top: 1vw;"></div>
+                <form style="display: flex; flex-direction: column; flex-grow: 1;" name="myform"
+                    action="mailto:nina.penot@laplateforme.io" method="GET">
 
-                    <div>
-                        <label class="contact_text" for="subject">Subject</label>
-                        <select class="contact_select" id="subject" name="subject">
-                            <option value="comment">Send a comment</option>
-                            <option value="feedback">Send feedback</option>
-                            <option value="suggestion">Send suggestion</option>
-                        </select>
-                    </div>
-                    <div style="margin-top: 1vw;"></div>
+                    <label class="contact_text" for="name">Your name:</label>
+                    <input class="contact_select" type="text" id="name" name="name" placeholder="Your name.." required>
 
-                    <div>
-                        <label class="contact_text" for="text">Your message...</label>
-                        <textarea class="contact_textbox" id="text" name="text" placeholder="Write something.."
-                            required></textarea>
-                    </div>
-                    <div style="margin-top: 1vw;"></div>
+                    <div style="margin-top: 1vh;"></div>
+
+
+                    <label class="contact_text" for="subject">Subject</label>
+                    <select class="contact_select" id="subject" name="subject">
+                        <option value="comment">Send a comment</option>
+                        <option value="feedback">Send feedback</option>
+                        <option value="suggestion">Send suggestion</option>
+                    </select>
+
+                    <div style="margin-top: 1vh;"></div>
+
+
+                    <label class="contact_text" for="text">Your message...</label>
+                    <textarea class="contact_textbox" id="text" name="text" placeholder="Write something.."
+                        required></textarea>
+
+                    <div style="margin-top: 1vh;"></div>
 
                     <input class="contact_submit" type="submit" value="Send!">
+
                 </form>
             </div>
+
         </div>
     </div>
 

@@ -1,2 +1,0 @@
-# fansite
-Fansite sur Waluigi
